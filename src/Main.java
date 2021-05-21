@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Main {
@@ -65,6 +66,12 @@ public class Main {
                     System.out.println("Danh sach sinh vien ");
                     manage.display();
                     break;
+                case 6:
+                    System.out.println("1.Sort by name  2.Sort by age  3.Sort by MSV");
+                    int option = sc.nextInt();
+                    sc.nextLine();
+                    manage.sort(option);
+                    break;
                 case 0:
                     System.exit(0);
                 default:
@@ -79,6 +86,7 @@ public class Main {
         System.out.println("3. Delete");
         System.out.println("4. Search");
         System.out.println("5. Display");
+        System.out.println("6. Sort by option");
         System.out.println("0. Exit");
         System.out.println("----------------------------------");
     }
